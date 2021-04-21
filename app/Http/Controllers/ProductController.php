@@ -4,13 +4,13 @@ namespace App\Http\Controllers;
 
 use App;
 use App\Product;
+use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
     public function index()
     {
         $products = Product::get();
-        $genders = Product::select('gender')->groupBy('gender')->get();
         $names = Product::select('product_name')->groupBy('product_name')->get();
         $descriptions = Product::select('description')->groupBy('description')->get();
         $prices = Product::select('price')->groupBy('price')->get();

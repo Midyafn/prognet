@@ -2,24 +2,28 @@
 
 @section('content')
 
-<div class="container">
+
+    <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-12 mb-2">
         @foreach ($products as $product)
-        <div class="col-md-2">
-        <div class="card" style="width: 20rem;">
-            <img src="{{ url('uploads') }}/ {{ $products->images}}" class="card-img-top" alt="...">
-                <div class="card-body">
+        <div class="col-md-4">
+            <div class="card">
+              <img src="{{ url('uploads') }}/{{ $product->images }}" class="card-img-top" alt="...">
+              <hr>
+              <div class="card-body">
                 <h5 class="card-title">{{ $product->product_name}}</h5>
-                <p class="card-text">Rp. {{ number_format($product->price)}}</p>
-                <a href="#" class="btn btn-primary">ADD TO CART</a>
-                </div>
-            </div>
+                <strong>Price :</strong> Rp. {{ number_format($product->price)}} <br>
+                <hr>
+                    
+                    <!-- Button details -->
+                    <a href="{{ url('products/details') }}/{{ $product->id }}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Detail</a>
+
+              </div>
             </div> 
         </div>
         @endforeach
-        </div>
     </div>
 </div>
+
 
 @endsection

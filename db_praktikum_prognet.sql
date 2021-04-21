@@ -230,11 +230,11 @@ CREATE TABLE `products` (
   `gender` varchar(30) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `images` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 /*Data for the table `products` */
 
-insert  into `products`(`id`,`product_name`,`price`,`description`,`product_rate`,`created_at`,`updated_at`,`stock`,`weight`,`gender`,`images`) values (1,'Billabong Eco Tee',400000,'- Kaos detail statementable typograph untuk daily look yang nyaman\r\n- Warna salt crystal (beige)\r\n- Kerah bulat\r\n- Unlined\r\n- Regular fit\r\n- Material katun tidak transparan, ringan, dan tidak stretch',NULL,'2021-03-23 01:19:44','2021-03-23 01:19:54',15,0,'wanita','seacewek.png'),(2,'GAP Logo Easy Heavyweight T-Shirt',425000,'- Brand graphic basic tee with faded effect\r\n- Round neckline\r\n- Unlined\r\n- Regular fit\r\n- Slip on style\r\n- Cotton',NULL,'2021-03-23 01:23:51','2021-03-23 01:23:56',10,NULL,'wanita',''),(3,'Cotton On Classic Arts T-Shirt',300000,'- Daily t-shirt monokrom dengan detail classic art print\r\n- Warna putih\r\n- Kerah bulat\r\n- Unlined\r\n- Regular fit\r\n- Material katun tidak transparan, ringan dan tidak stretch',NULL,'2021-03-23 01:29:13','2021-03-23 01:29:16',15,NULL,'wanita','');
+insert  into `products`(`id`,`product_name`,`price`,`description`,`product_rate`,`created_at`,`updated_at`,`stock`,`weight`,`gender`,`images`) values (1,'DEJSA lampu cream',400000,'- Kaos detail statementable typograph untuk daily look yang nyaman\r\n- Warna salt crystal (beige)\r\n- Kerah bulat\r\n- Unlined\r\n- Regular fit\r\n- Material katun tidak transparan, ringan, dan tidak stretch',NULL,'2021-03-23 01:19:44','2021-03-23 01:19:54',15,0,'wanita','lampu_krem.png'),(2,'TETRIAL lampu putih',425000,'- Brand graphic basic tee with faded effect\r\n- Round neckline\r\n- Unlined\r\n- Regular fit\r\n- Slip on style\r\n- Cotton',NULL,'2021-03-23 01:23:51','2021-03-23 01:23:56',10,NULL,'wanita','lampu_putih.png'),(3,'FINNSTAR lampu biru',300000,'- Daily t-shirt monokrom dengan detail classic art print\r\n- Warna putih\r\n- Kerah bulat\r\n- Unlined\r\n- Regular fit\r\n- Material katun tidak transparan, ringan dan tidak stretch',NULL,'2021-03-23 01:29:13','2021-03-23 01:29:16',15,NULL,'wanita','lampu_biru.png'),(4,'EMMA rak buku ',0,'',NULL,NULL,NULL,NULL,NULL,NULL,'rak_coklat.png'),(5,'BILLY rak buku',0,'',NULL,NULL,NULL,NULL,NULL,NULL,'rak_hitam.png'),(6,'FEJKA tanaman pot',0,'',NULL,NULL,NULL,NULL,NULL,NULL,'tanamanhias.png'),(7,'',0,'',NULL,NULL,NULL,NULL,NULL,NULL,'tanamandahlia.png');
 
 /*Table structure for table `response` */
 

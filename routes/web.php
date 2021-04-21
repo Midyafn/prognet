@@ -26,7 +26,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //products
 Route::get('/products','ProductController@index')->name('product.index');
-
+Route::get('products/details/{id}', 'DetailsController@index');
 
 // User Logout
 Route::post('/user/logout', 'Auth\LoginController@userLogout')->name('user.logout');
@@ -52,4 +52,6 @@ Route::prefix('admin')->group(function () {
     Route::post('/password/email', 'Auth\AdminForgotPasswordController@sendResetLinkEmail')->name('admin.password.email');
     Route::get('/password/reset/{token}', 'Auth\AdminResetPasswordController@showResetForm')->name('admin.password.reset');
     Route::post('/password/reset', 'Auth\AdminResetPasswordController@reset')->name('admin.password.update');
+
+    
 });
