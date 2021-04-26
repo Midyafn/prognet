@@ -38,8 +38,4 @@ class Admin extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    protected function sendPasswordResetNotification($token)
-    {
-        $this->notify(new AdminResetPasswordNotification($token) );
-    }
 }
