@@ -26,7 +26,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //products
 Route::get('/products','ProductController@index')->name('product.index');
+
+//details dan pesan
 Route::get('products/details/{id}', 'DetailsController@index');
+Route::post('cart/{id}', 'DetailsController@cart');
 
 // User Logout
 Route::post('/user/logout', 'Auth\LoginController@userLogout')->name('user.logout');

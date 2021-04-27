@@ -47,7 +47,7 @@
                                         <td>
                                              <form method="post" action="{{ url('cart') }}/{{ $products->id }}" >
                                             @csrf
-                                                <input type="text" name="qty" class="form-control" required="">
+                                                <input id="txtPassportNumber" name="qty" type="number" min="0" max="{{ $products->stok }}" onkeyup="EnableDisable(this)">
                                                 <button type="submit" class="btn btn-primary mt-2"><i class="fa fa-shopping-cart"></i> Add to cart</button>
                                             </form>
                                         </td>

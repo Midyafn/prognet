@@ -26,8 +26,4 @@
 </div>
 
 
-<<<<<<< HEAD
 @endsection
-=======
-@endsection
->>>>>>> 728b22dcc4aca534bf26b3277b05c80d6b73c425

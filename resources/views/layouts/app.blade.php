@@ -16,8 +16,12 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 </head>
 <body>
     <div id="app">
@@ -38,11 +42,16 @@
                             </li>
                         </ul>
                         <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
                         </form>
                 </div>
                         <!-- Authentication Links -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url('check-out') }}"><i class="fas fa-shopping-cart fa-2x"></i>
+                                <span class="badge badge-light"></span>
+                                </a>
+                            </li>
                         @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
